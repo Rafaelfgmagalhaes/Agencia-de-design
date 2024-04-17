@@ -1,0 +1,46 @@
+.BotaoDark{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--paragrafoDark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.BotaoDark img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.BotaoDark:hover img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.BotaoLight{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--paragrafoDark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.BotaoLight img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.BotaoLight:hover img{
+    width: 30px;
+    height: 30px;
+}

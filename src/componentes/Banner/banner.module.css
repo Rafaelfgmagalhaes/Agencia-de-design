@@ -1,0 +1,103 @@
+ .areaBanner{
+    width: 100vw;
+    height: 860px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.divfoto{
+    width: 50%;
+    height: 100%;
+}
+
+.divfoto img{
+    width: 100%;
+    height: 100%;
+}
+
+.textBanner{
+    width: 50%;
+    height: 100%;
+    background-color: var(--banner);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    justify-content: center;
+    
+}
+
+.textBanner p{
+    font-size: 14px;
+    color: var(--textbanner);
+}
+
+.textBanner h1{
+    max-width: 60%;
+    font-size: 48px;
+    color: var(--textbanner);
+    font-weight: normal;
+}
+
+
+@media only screen and (min-width:240px) and (max-width: 437px){
+    .areaBanner{
+        height: 330px;
+    }
+    
+    .divfoto{
+        display: none;
+    }
+
+    .textBanner{
+        width: 100%;
+    }
+
+    .textBanner h1{
+        font-size: 24px;
+        max-width: 85%;
+    }
+
+  
+}
+
+@media only screen and (min-width:438px) and (max-width: 768px){
+    .areaBanner{
+        height: 760px;
+    }
+
+    .divfoto{
+        display: none;
+    }
+
+    .textBanner{
+        width: 100%;
+    }
+
+    .textBanner h1{
+        max-width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .areaBanner{
+        height: 780px;
+    }
+
+    .divfoto{
+        width: 50%;
+    }
+
+    .textBanner{
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .textBanner h1{
+        max-width: 85%;
+    }
+}
+

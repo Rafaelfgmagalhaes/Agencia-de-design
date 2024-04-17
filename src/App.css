@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* fonte externa poppins */
+@font-face {
+    font-family: 'poppins';
+    src: url('../public/fonts/Poppins-Regular.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* paleta de cores */
+:root{
+    --textbanner: #022144;
+    --banner: #fafbfc;
+    --titulos: #32333c;
+    --corSection: #f6f8fc;
+    --paragrafos: #8a8fa3;
+    --corpopage: #fff;
+    --hover: #feb633;
+    --paragrafoDark: #9f9f9f;
+    --sectionDark: #393838;
+    --corpoPageDark: #252525;
+    --bordaCard: #d1d1d365;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light{
+    background-color: var(--corpopage);
 }
 
-.App-link {
-  color: #61dafb;
+.ligth  h1, h2{
+    color: var(--titulos);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light p{
+    color: var(--paragrafos);
+}
+
+.lightSection{
+    background-color: var(--corSection);
+    
+}
+
+.lightSection  h1{
+    color: var(--titulos);
+}
+
+.lightSection  p{
+    color: var(--paragrafos);
+}
+
+.dark{
+    background-color: var(--corpoPageDark);
+    
+}
+
+.dark > h1, h2{
+    color: var(--paragrafoDark);
+}
+
+.dark p{
+    color: var(--paragrafoDark);
+}
+
+.darkSection{
+    background-color: var(--sectionDark);
+}
+
+.darkSection h1, h2{
+    color: var(--corSection);
+}
+
+.darkSection p{
+    color: var(--paragrafoDark);
 }
